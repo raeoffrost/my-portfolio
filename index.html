@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Your Name</h1>
+        <h1>Abby Friesen</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -19,27 +22,43 @@
         </nav>
     </header>
 
+    <div class="body-wrap">
+    
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is where you’ll write a short bio about yourself. Who are you? What are your interests? What have you done so far in your journey?</p>
+    <section id="about" class="about">
+        <div class="about-pic">
+            <img src="./css/images/abby-icon.svg" alt="simple stylized illustration of Abby">
+        </div>
+        <div class="about-text">
+        <h2><span class="underlined">Abby Friesen</span>, Design and Code</h2>
+        <p>I am a web designer, graphic designer, and artist with a passion for creating visually appealing and user-friendly websites. With years of experience in the industry, I specialize in crafting custom websites that cater to your unique needs and goals. Let's work together to bring your vision to life!</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section class="projects-wrap">
+    <div id="projects" class="projects">
+        <div class="projects-text">
         <h2>My Projects</h2>
         <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+        </div>
+        <div class="gallery">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+    </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
     </section>
-
+</div>
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Abby Friesen</p>
     </footer>
 </body>
 </html>
