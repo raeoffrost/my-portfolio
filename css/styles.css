@@ -6,6 +6,10 @@ body {
     line-height: 1.6;
     color: #22223b;
     font-family: "Rubik", sans-serif;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 section {
@@ -15,6 +19,7 @@ section {
 
 .body-wrap{
     margin: 20px auto;
+   
     max-width: 1220px;
 }
 
@@ -65,10 +70,8 @@ footer {
     background-color: #1b3d5c;
     color: white;
     text-align: center;
+    margin-top: auto;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 /* .about */
