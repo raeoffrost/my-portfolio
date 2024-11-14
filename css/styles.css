@@ -1,170 +1,235 @@
 /* Page */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #22223b;
-    font-family: "Rubik", sans-serif;
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #22223b;
+  font-family: "Rubik", Arial, sans-serif;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f5f4;
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
+  padding: 20px;
+  margin: 20px;
 }
 
-.body-wrap{
-    margin: 20px auto;
-   
-    max-width: 1220px;
+.body-wrap {
+  margin: 20px auto;
+
+  max-width: 1220px;
 }
 
 /* Nav */
 header {
-    background-color: #f2e9e4;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #f2e9e4;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-
-
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    color: #9a8c98;
-    text-decoration: none;
-    font-weight: 600;
+  color: #9a8c98;
+  text-decoration: none;
+  font-weight: 600;
 }
 nav ul li a:hover {
-    padding-bottom: 2px;
-    border-bottom:  2px #c9ada7 solid;
+  padding-bottom: 2px;
+  border-bottom: 2px #c9ada7 solid;
 }
 
 /* typography */
 
 header h1 {
-    color: #4a4e69;
+  color: #4a4e69;
 }
 
-.underlined{
-    padding-bottom: 2px;
-    border-bottom:  2px #c9ada7 solid;
+.underlined {
+  padding-bottom: 2px;
+  border-bottom: 2px #c9ada7 solid;
 }
 
 /* footer */
 
 footer {
-    background-color: #1b3d5c;
-    color: white;
-    text-align: center;
-    margin-top: auto;
-    padding: 10px 0;
+  background-color: #1b3d5c;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  padding: 10px 0;
 }
 
 /* .about */
 
-.about{
-    display: flex;
-    gap: 20px; 
+.about {
+  display: flex;
+  gap: 20px;
 }
-.about-pic{
-    flex-grow: 1;
+.about-pic {
+  flex-grow: 1;
 }
 .about-pic img {
-    min-width: 100px;
-} 
-.about-text{
-    flex-grow: 2;
-    max-width: 1000px;
+  min-width: 100px;
+}
+.about-text {
+  flex-grow: 2;
+  max-width: 1000px;
 }
 
 /* projects */
 
 .projects {
-    position: relative;
-    background-color: #1b3d5c;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 0 20px 5px #22223b21;
-    color: #fff;
+  position: relative;
+  background-color: #1b3d5c;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px 5px #22223b21;
+  color: #f3f0eb;
 }
-.projects-wrap{
-    position: relative;
-    padding: 0px;
+.projects-wrap {
+  position: relative;
+  padding: 0px;
 }
-.projects-wrap:before{
-    content: ' ';
-    display: block;
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background-image: url("./images/socialiconpattern.png");
-    background-size: cover;
-    background-repeat: repeat;
+.projects-wrap:before {
+  content: " ";
+  display: block;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url("./images/socialiconpattern.png");
+  background-size: cover;
+  background-repeat: repeat;
 }
-.gallery{
-    display: flex;
-    position: relative;
-    z-index: 10;
-    flex-wrap: wrap;
+.gallery {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
 }
-.projects-text{
-    position: relative;
-    z-index: 15;
+.projects-text {
+  position: relative;
+  z-index: 15;
 }
-.placeholder{
-    flex-grow: 1;
-    min-height: 200px;
-    background-color: #c8ddef;
-    margin: 10px;
-    border-radius: 20px;
-    z-index: 1;
-    min-width: 200px;
+.placeholder {
+  flex-grow: 1;
+  min-height: 200px;
+  background-color: #c8ddef;
+  margin: 10px;
+  border-radius: 20px;
+  z-index: 1;
+  min-width: 200px;
 }
-.contact{
-    text-align: center;
-}
-.contact .contact-wrap{
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 0;
-    border-radius:  0 0 20px 20px;
-    border: #4a4e69 4px solid;
-    border-top: 0px;
-}
-.contact h2{
-    background-color: #c8ddef;
-    border-radius:  20px 20px 0 0;
-    padding: 10px;
-    margin-bottom: 0px;
-    border-bottom: #4a4e69 4px solid;
 
+/* Contact Form */
+
+.contact {
+  text-align: center;
+}
+.contact .contact-wrap {
+  background-color: #fff;
+  padding: 0px;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+  border: #4a4e69 4px solid;
+  border-top: 0px;
+}
+.contact h2 {
+  background-color: #c8ddef;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  margin-bottom: 0px;
+  border-bottom: #4a4e69 4px solid;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact-wrap {
+  position: relative;
+  display: flex;
+}
+.contact-borderArt {
+  position: relative;
+  padding: 0px;
+  width: -moz-available;
+  max-width: 100%;
+}
+.contact-borderArt:before {
+  content: " ";
+  display: block;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url("./images/socialiconpattern.png");
+  background-size: cover;
+  background-repeat: repeat;
+}
+form h3.formBlock {
+  flex-grow: 2;
+}
+form .formBlock {
+  flex-grow: 1;
+  display: flex;
+  gap: 20px;
+  align-items: self-end;
+}
+form .formBlock.flex-wrap {
+  align-items: center;
+}
+.flex-innerwrap {
+  flex-direction: row;
+}
+.innerformBlock {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  align-items: self-end;
+}
+.contact input {
+  border-radius: 20px;
+  padding: 10px;
+  border: #4a4e69 2px solid;
+  font-family: "Rubik", Arial, sans-serif;
 }
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
-    nav ul li {
-        margin: 0 5px;
-    }
+  nav ul li {
+    margin: 0 5px;
+  }
 
-    section {
-        padding: 10px;
-        margin: 10px;
-    }
+  section {
+    padding: 10px;
+    margin: 10px;
+  }
 }
