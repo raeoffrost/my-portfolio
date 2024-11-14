@@ -141,7 +141,7 @@ footer {
 .contact{
     text-align: center;
 }
-.contact .placeholder{
+.contact .contact-wrap{
     background-color: #ffffff;
     padding: 10px;
     margin: 0;
