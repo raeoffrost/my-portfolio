@@ -216,11 +216,44 @@ form .formBlock.flex-wrap {
   flex-direction: row;
   align-items: self-end;
 }
-.contact input {
+.contact input,
+.contact textarea,
+.contact select {
   border-radius: 20px;
   padding: 10px;
   border: #4a4e69 2px solid;
   font-family: "Rubik", Arial, sans-serif;
+}
+.contact textarea {
+  border-radius: 20px 20px 0 20px;
+}
+.contact select {
+  width: 100%;
+  background-color: #c8ddef;
+}
+.contact select:hover {
+  background-color: #90afca;
+}
+.contact select:active {
+  background-color: #90afca;
+}
+.formBlock.formSubject {
+  gap: 5px;
+  margin: 20px;
+  margin-right: 0;
+}
+.formBlock.formSubmit {
+  margin: 20px;
+  margin-bottom: 0;
+}
+.formBlock.formSubmit input {
+  background-color: #c8ddef;
+}
+.formBlock.formSubmit input:hover {
+  background-color: #dde8f1;
+}
+.formBlock.formSubmit input:active {
+  background-color: #b6cee2;
 }
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
@@ -231,5 +264,8 @@ form .formBlock.flex-wrap {
   section {
     padding: 10px;
     margin: 10px;
+  }
+  .flex-innerwrap {
+    flex-direction: column;
   }
 }
