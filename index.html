@@ -1,64 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="script.js"></script>
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <h1>Abby Friesen</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Abby Friesen</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="body-wrap">
-    
-    <!-- About Section -->
-    <section id="about" class="about">
+      <!-- About Section -->
+      <section id="about" class="about">
         <div class="about-pic">
-            <img src="./css/images/abby-icon.svg" alt="simple stylized illustration of Abby">
+          <img src="./css/images/abby-icon.svg" alt="simple stylized illustration of Abby" />
         </div>
         <div class="about-text">
-        <h2><span class="underlined">Design and Code</span></h2>
-        <p>I am a web designer, graphic designer, and artist with a passion for creating visually appealing and user-friendly websites. With years of experience in the industry, I specialize in crafting custom websites that cater to your unique needs and goals. Let's work together to bring your vision to life!</p>
+          <h2><span class="underlined">Design and Code</span></h2>
+          <p>I am a web designer, graphic designer, and artist with a passion for creating visually appealing and user-friendly websites. With years of experience in the industry, I specialize in crafting custom websites that cater to your unique needs and goals. Let's work together to bring your vision to life!</p>
         </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section class="projects-wrap">
-    <div id="projects" class="projects">
-        <div class="projects-text">
-        <h2>My Projects</h2>
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+      <!-- Projects Section -->
+      <section class="projects-wrap">
+        <div id="projects" class="projects">
+          <div class="projects-text">
+            <h2>My Projects</h2>
+            <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+          </div>
+          <div class="gallery">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+          </div>
         </div>
-        <div class="gallery">
-            <div class="placeholder"></div>
-            <div class="placeholder"></div>
-            <div class="placeholder"></div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>&bull; Let's Chat &bull;</h2>
+        <div class="contact-wrap">
+          <div class="contact-borderArt"></div>
+          <form class="formContact" action="/" enctype="text/plain" method="post" id="formContact" name="formContact" novalidate>
+            <h3 class="underlined formBlock">Tell me a bit about yourself</h3>
+            <div class="formBlock flex-wrap">
+              <div class="formBlock flex-innerwrap">
+                <div class="formName innerformBlock">
+                  <div class="icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9ada7">
+                      <path
+                        d="M880-759q0-51-35-86t-86-35v-60q75 0 128 53t53 128h-60ZM240-40q-83 0-141.5-58.5T40-240h60q0 58 41 99t99 41v60Zm162 0q-30 0-56-13.5T303-92L48-465l24-23q19-19 45-22t47 12l116 81v-383q0-17 11.5-28.5T320-840q17 0 28.5 11.5T360-800v537L212-367l157 229q5 8 14 13t19 5h278q33 0 56.5-23.5T760-200v-560q0-17 11.5-28.5T800-800q17 0 28.5 11.5T840-760v560q0 66-47 113T680-40H402Zm38-440v-400q0-17 11.5-28.5T480-920q17 0 28.5 11.5T520-880v400h-80Zm160 0v-360q0-17 11.5-28.5T640-880q17 0 28.5 11.5T680-840v360h-80ZM486-300Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="input-wrap">
+                  <label for="formName"></label>
+                  <input type="text" placeholder="Hi, my name is" name="formName" id="formName" aria-label="Contact Name"/>
+                  <div class="error"></div>
+                </div>
+                </div>
+                <div class="formJob innerformBlock">
+                  <div class="icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9ada7">
+                      <path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" />
+                    </svg>
+                  </div>
+                  <div class="input-wrap">
+                  <label for="formJob"></label>
+                  <input type="text" placeholder="My job is" name="formJob" id="formJob" aria-label="Contact Job"/>
+                </div>
+                </div>
+              </div>
+              <div class="formBlock flex-innerwrap">
+                <div class="formEmail innerformBlock">
+                  <div class="icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9ada7">
+                      <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                    </svg>
+                  </div>
+                  <div class="input-wrap">
+                    <label for="formEmail"></label>
+                    <input type="email" placeholder="You can e-mail at" name="formEmail" id="formEmail" aria-label="Contact Email"/>
+                    <div class="error"></div>
+                  </div>
+                </div>
+                <div class="formPhone innerformBlock">
+                  <div class="icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9ada7">
+                      <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                    </svg>
+                  </div>
+                  <div class="input-wrap">
+                  <label for="formPhone"></label>
+                  <input type="text" placeholder="You can call me at" name="formPhone" id="formPhone" aria-label="Contact Phone"/>
+                  <div class="error"></div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="underlined formBlock">What would you like to talk about?</h3>
+            <div class="formSubject formBlock">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9ada7">
+                  <path
+                    d="m480-80-10-120h-10q-142 0-241-99t-99-241q0-142 99-241t241-99q71 0 132.5 26.5t108 73q46.5 46.5 73 108T800-540q0 75-24.5 144t-67 128q-42.5 59-101 107T480-80Zm80-146q71-60 115.5-140.5T720-540q0-109-75.5-184.5T460-800q-109 0-184.5 75.5T200-540q0 109 75.5 184.5T460-280h100v54Zm-101-95q17 0 29-12t12-29q0-17-12-29t-29-12q-17 0-29 12t-12 29q0 17 12 29t29 12Zm-29-127h60q0-30 6-42t38-44q18-18 30-39t12-45q0-51-34.5-76.5T460-720q-44 0-74 24.5T344-636l56 22q5-17 19-33.5t41-16.5q27 0 40.5 15t13.5 33q0 17-10 30.5T480-558q-35 30-42.5 47.5T430-448Zm30-65Z"
+                  />
+                </svg>
+              </div>
+              <div class="input-wrap">
+              <label for="formSubject"></label>
+              <select placeholder="What's Up?" name="formSubject" id="formSubject">
+                <option disabled hidden selected>What's Up?</option>
+                <option>I'd like to work together</option>
+                <option>I have a question</option>
+                <option>I'd like to make a proposal</option>
+              </select>
+            </div>
+            </div>
+            <div class="formMessage formBlock">
+              <div class="input-wrap">
+              <label for="message"></label>
+              
+              <textarea name="message" placeholder="So, here is what's up..." id="formMessage" name="formMessage" cols="30" rows="5"></textarea>
+              <div class="error"></div>  
+            </div>
+            </div>
+            <div class="formSubmit formBlock">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9ada7"><g  transform="rotate(-30) translate(300, 300)"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg>
+              </div>
+              <div class="input-wrap">
+              <input type="submit" value="Send Message" id="formSubmit" aria-label="Send Message" />
+            </div>
+            </div>
+          </form>
+          <div class="contact-borderArt"></div>
         </div>
+      </section>
     </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="placeholder"> <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p></div>
-    </section>
-</div>
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Abby Friesen</p>
+      <p>&copy; 2024 Abby Friesen</p>
     </footer>
-</body>
+  </body>
 </html>
