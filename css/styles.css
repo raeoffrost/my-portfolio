@@ -216,9 +216,9 @@ form .formBlock.flex-wrap {
   flex-direction: row;
   align-items: self-end;
 }
-.contact input,
-.contact textarea,
-.contact select {
+.contact .input-wrap input,
+.contact .input-wrap textarea,
+.contact .input-wrap select {
   padding: 10px;
   border: #4a4e69 2px solid;
   border-radius: 20px;
@@ -229,10 +229,14 @@ form .formBlock.flex-wrap {
 .contact select:focus {
   outline: 0;
 }
-.contact textarea {
+.contact .input-wrap textarea {
+  width: 100%;
   border-radius: 20px 20px 0 20px;
 }
 .input-wrap:has(> select) {
+  width: 100%;
+}
+.input-wrap:has(> textarea) {
   width: 100%;
 }
 .contact select {
@@ -269,15 +273,15 @@ form .formBlock.flex-wrap {
   gap: 0px;
 }
 
-.input-wrap.success input,
-.input-wrap.success select,
-.input-wrap.success textarea {
+.contact .input-wrap.valid input,
+.contact .input-wrap.valid select,
+.contact .input-wrap.valid textarea {
   border-color: #0bb9c5;
 }
 
-.input-wrap.error input,
-.input-wrap.error select,
-.input-wrap.error textarea {
+.contact .input-wrap.invalid input,
+.contact .input-wrap.invalid select,
+.contact .input-wrap.invalid textarea {
   border-color: #c50b58;
 }
 
