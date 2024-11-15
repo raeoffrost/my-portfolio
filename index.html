@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="anime.min.js"></script>
+    <script defer type="module" src="app.js"></script>
     <script defer src="script.js"></script>
     <title>My Portfolio</title>
   </head>
@@ -43,9 +45,28 @@
             <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
           </div>
           <div class="gallery">
-            <div class="img-wrap"><img src="./css/images/ARTgallery/Alex.webp" alt="Alexander and the tarnished"><a class="btn" onclick="showDetails1()">See More</a><span class="hide" id="img1details">Digital Illustration<br>2022<br>Alexander and the Tarnished</span></div>
-            <div class="img-wrap"><img src="./css/images/ARTgallery/Alex.webp" alt="Alexander and the tarnished"><a class="btn" onclick="showDetails2()">See More</a><span class="hide" id="img2details">Digital Illustration<br>2022<br>Alexander and the Tarnished</span></div>
-            <div class="img-wrap"><img src="./css/images/ARTgallery/Alex.webp" alt="Alexander and the tarnished"><a class="btn" onclick="showDetails3()">See More</a><span class="hide" id="img3details">Digital Illustration<br>2022<br>Alexander and the Tarnished</span></div>
+            <div class="img-wrap"><img src="./css/images/ARTgallery/Alex.webp" alt="Alexander and the tarnished">
+              <div class="root" >
+              <div id="wrapper">
+                <div class="text">Digital Illustration<br>2022<br>Alexander and the Tarnished</div>
+              </div>
+              <div class="button" id="button">See More</div>
+            </div>
+          </div>
+            <div class="img-wrap"><img src="./css/images/ARTgallery/Alex.webp" alt="Alexander and the tarnished">
+              <div class="root">
+                <div id="wrapper2">
+                  <div class="text" >Digital Illustration<br>2022<br>Alexander and the Tarnished</div>
+                </div>
+                <div class="button" id="button2">See More</div>
+              </div></div>
+            <div class="img-wrap"><img src="./css/images/ARTgallery/Alex.webp" alt="Alexander and the tarnished"> <div class="root" id="root">
+              <div id="wrapper3">
+                <div class="text">Digital Illustration<br>2022<br>Alexander and the Tarnished</div>
+              </div>
+              <div class="button" id="button3">See More</div>
+            </div>
+          </div>
           </div>
         </div>
       </section>
