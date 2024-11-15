@@ -38,8 +38,6 @@ function emailIsValid(email) {
   return re.test(String(email).toLowerCase());
 }
 
-// action="mailto:someone@example.com"
-
 function formValidate() {
   // set variables for form values and remove excess space
   const fnameValue = fname.value.trim();
@@ -74,6 +72,19 @@ function formValidate() {
   } else {
     success(message);
   }
-  console.log("it ran 2");
 }
-console.log("it ran");
+
+const img1 = document.getElementById("img1details");
+const img2 = document.getElementById("img2details");
+const img3 = document.getElementById("img3details");
+
+function showDetails1() {
+  img1.classList.toggle("hide");
+}
+function showDetails2() {
+  img2.classList.toggle("hide");
+}
+
+function showDetails3() {
+  img3.classList.toggle("hide");
+}
