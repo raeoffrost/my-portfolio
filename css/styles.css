@@ -291,7 +291,48 @@ form .formBlock.flex-wrap {
   text-align: left;
   position: absolute;
 }
-
+.gallery div img {
+  max-width: 200px;
+  margin: auto 0;
+  border-radius: 10px;
+  display: block;
+}
+.img-wrap {
+  flex-grow: 1;
+  background-color: #c8ddef;
+  margin: 10px;
+  border-radius: 20px;
+  z-index: 1;
+  min-width: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.img-wrap span {
+  color: #22223b;
+  padding-bottom: 10px;
+}
+.btn {
+  margin: 10px;
+  color: #22223b;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 24px;
+  display: block;
+}
+.btn:hover {
+  background-color: #e8ecf0;
+}
+.btn:active {
+  background-color: #a7b7c9;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
   nav ul li {
