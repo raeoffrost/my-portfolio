@@ -1,4 +1,4 @@
-import anime from "./my-portfolio/node_modules/animejs/lib/anime.es.js";
+import anime from "./modules/animejs/lib/anime.es.js";
 let isOpen = false;
 document.addEventListener('DOMContentLoaded', () => {
   let targets = document.getElementById('wrapper');
