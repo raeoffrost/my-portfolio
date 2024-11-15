@@ -219,13 +219,21 @@ form .formBlock.flex-wrap {
 .contact input,
 .contact textarea,
 .contact select {
-  border-radius: 20px;
   padding: 10px;
   border: #4a4e69 2px solid;
+  border-radius: 20px;
   font-family: "Rubik", Arial, sans-serif;
+}
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus {
+  outline: 0;
 }
 .contact textarea {
   border-radius: 20px 20px 0 20px;
+}
+.input-wrap:has(> select) {
+  width: 100%;
 }
 .contact select {
   width: 100%;
@@ -255,6 +263,31 @@ form .formBlock.flex-wrap {
 .formBlock.formSubmit input:active {
   background-color: #b6cee2;
 }
+
+/* Validation */
+.formBlock:has(> .error) {
+  gap: 0px;
+}
+
+.input-wrap.success input,
+.input-wrap.success select,
+.input-wrap.success textarea {
+  border-color: #0bb9c5;
+}
+
+.input-wrap.error input,
+.input-wrap.error select,
+.input-wrap.error textarea {
+  border-color: #c50b58;
+}
+
+.input-wrap .error {
+  color: rgb(218, 28, 117);
+  font-size: 12px;
+  text-align: left;
+  position: absolute;
+}
+
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
   nav ul li {
