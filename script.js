@@ -21,8 +21,6 @@ function error(element, message) {
   inputInvalid.classList.add("invalid");
   inputInvalid.classList.remove("valid");
 }
-console.log(fname);
-console.log(email);
 // remove error message and indicate valid
 function success(element) {
   const inputValid = element.parentElement;
