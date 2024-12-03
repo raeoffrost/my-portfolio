@@ -409,23 +409,7 @@ form .formBlock.flex-wrap {
     align-items: center;
   }
 
-/* Media Queries for Mobile Devices */
-@media only screen and (max-width: 600px) {
-  nav ul li {
-    margin: 0 5px;
-  }
 
-  section {
-    padding: var(--sm);
-    margin: var(--sm);
-  }
-  .flex-innerwrap {
-    flex-direction: column;
-  }
-  .projects-text {
-    justify-content: space-evenly;
-  }
-}
 
 
 /* Dark Mode */
@@ -475,8 +459,31 @@ body.dark-mode .btn:hover {
   background-color: var(--blue-d);
 }
 #dark-toggle{
-  width: 100px;
+  width: 80px;
   position: absolute;
   top: 5px;
   right: 5px;
+  font-size: small;
+  padding: 5px;
+}
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  section {
+    padding: var(--sm);
+    margin: var(--sm);
+  }
+  .flex-innerwrap {
+    flex-direction: column;
+  }
+  .projects-text {
+    justify-content: space-evenly;
+  }
+  #dark-toggle{
+   position: relative;
+   margin: auto;
+  }
 }
