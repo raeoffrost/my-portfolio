@@ -359,7 +359,7 @@ form .formBlock.flex-wrap {
     align-items: start;
   }
   
-  #wrapper, #wrapper2, #wrapper3 {
+  .wrapper{
     overflow: hidden;
     display: none;
     width: 320px;
@@ -370,7 +370,6 @@ form .formBlock.flex-wrap {
   
   .text {
     padding: 0.5em 1em;
-    border: 1px solid #5d5f79;
     color: #22223b;
     border-radius: 20px;
   }
