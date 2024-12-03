@@ -7,7 +7,7 @@ const phone = document.getElementById("formPhone");
 const email = document.getElementById("formEmail");
 const message = document.getElementById("formMessage");
 
-// prevent form from subbmiting without validation
+// prevent form from submitting without validation
 form.addEventListener("submit", (form) => {
   form.preventDefault();
   formValidate();
@@ -86,3 +86,22 @@ function showDetails2() {
 function showDetails3() {
   img3.classList.toggle("hide");
 }
+
+
+// Filter function
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.img-wrap');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        projects.forEach(project => {
+            if (project.getAttribute('data-category') === category || category === 'all') {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    });
+});
