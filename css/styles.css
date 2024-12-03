@@ -474,3 +474,9 @@ body.dark-mode .button:hover,
 body.dark-mode .btn:hover {
   background-color: var(--blue-d);
 }
+#dark-toggle{
+  width: 100px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
