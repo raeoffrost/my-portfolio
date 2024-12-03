@@ -122,10 +122,13 @@ footer {
   position: relative;
   z-index: 10;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .projects-text {
   position: relative;
   z-index: 15;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .placeholder {
   flex-grow: 1;
@@ -292,7 +295,7 @@ form .formBlock.flex-wrap {
   position: absolute;
 }
 .gallery div img {
-  max-width: 200px;
+  max-width: 320px;
   margin: auto 0;
   border-radius: 10px;
   display: block;
@@ -301,9 +304,7 @@ form .formBlock.flex-wrap {
   margin: 10px;
   border-radius: 20px;
   z-index: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: end;
+  display: block;
 }
 .img-wrap span {
   color: #22223b;
@@ -343,6 +344,9 @@ form .formBlock.flex-wrap {
   .flex-innerwrap {
     flex-direction: column;
   }
+  .projects-text {
+    justify-content: space-evenly;
+  }
 }
 
 
@@ -360,7 +364,7 @@ form .formBlock.flex-wrap {
     display: none;
     width: 320px;
     background-color: #c8ddef;
-    margin: 10px;
+    margin-top: 10px;
     border-radius: 20px;
   }
   
@@ -380,4 +384,20 @@ form .formBlock.flex-wrap {
     display: block;
     margin: 10px;
     cursor: pointer;
+  }
+  .button:hover{
+    background-color: #c0d8e4;
+  }
+  .filter-btn{
+    font-family: "Rubik", Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+  }
+  .d-flex{
+    display:flex;
+  }
+  .btn-group{
+    justify-content: space-around;
+    align-items: center;
   }
