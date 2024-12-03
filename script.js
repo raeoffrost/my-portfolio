@@ -105,3 +105,11 @@ filterButtons.forEach(button => {
         });
     });
 });
+
+
+// dark mode toggle
+
+const darkToggle = document.getElementById('dark-toggle');
+darkToggle.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
