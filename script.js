@@ -107,9 +107,27 @@ filterButtons.forEach(button => {
 });
 
 
-// dark mode toggle
+// dark mode toggle and save preference
+document.addEventListener('DOMContentLoaded', () => {
+  
+  const darkToggle = document.getElementById('dark-toggle');
 
-const darkToggle = document.getElementById('dark-toggle');
-darkToggle.addEventListener('click', function() {
+  // Check for saved  preference
+  const savedDarkMode = localStorage.getItem('darkMode');
+  if (savedDarkMode === 'enabled') {
+    document.body.classList.add('dark-mode');
+  }
+
+  // toggle mode
+  darkToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    
+    // Save preference
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      localStorage.removeItem('darkMode');
+    }
+  });
+  
 });
