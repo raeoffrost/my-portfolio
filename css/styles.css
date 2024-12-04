@@ -500,8 +500,11 @@ body.dark-mode .btn:hover {
   flex-wrap:wrap;
 
   }
-  .about-pic img{
-    max-width: 20px;
+  .about-pic{
+    width: 100%;
     text-align: center;
+  }
+  .about-pic img{
+    max-width: 20px; 
   }
 }
