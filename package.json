@@ -1,4 +1,6 @@
 {
+  "name": "cpan-134-my-portfolio",
+  "version": "1.0.0",
   "dependencies": {
     "animejs": "^3.2.2"
   }

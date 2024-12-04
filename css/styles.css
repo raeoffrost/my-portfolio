@@ -112,6 +112,12 @@ footer {
   flex-grow: 2;
   max-width: 1000px;
 }
+.quick-skills{
+  display: flex;
+  border: var(--blue-d) 1px solid;
+  border-radius: var(--sm);
+  gap: var(--sm);
+}
 
 /* projects */
 
@@ -485,5 +491,17 @@ body.dark-mode .btn:hover {
   #dark-toggle{
    position: relative;
    margin: auto;
+  }
+  .quick-skills{
+    flex-wrap: wrap;
+    padding: var(--md);
+  }
+  .about{
+  flex-wrap:wrap;
+
+  }
+  .about-pic img{
+    max-width: 20px;
+    text-align: center;
   }
 }
